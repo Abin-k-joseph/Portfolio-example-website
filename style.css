@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+.container-main{
+    height: 300vh;
+    width: 100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab );
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    position: absolute;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+.header{
+    background-color:  #322348;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#home-section{
+    color: #08d665;
+    padding-top: 10em;
+}
+
+.header-section{
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    color: #08d665;
+}
+.section-text-primary{
+    color: var(--primary_darklight_text,#54557c);
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.section-text-secondary{
+   /*background:var(--Title-Gradient,linear-gradient(90deg,#239982 -1.88%,#6d64d3 104.56%));*/
+   font-weight: 600;
+   font-size: 50px;
+   line-height: 110%;
+   font-style: normal;
+}
+
+.blockquote{
+    padding-left: 80px;
+}
+
+.blockquote-footer{
+    padding-left: 380px;
+}
+
+
+
+#border{
+    background-color:white;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;  
+    box-shadow: 10px 7px 20px  rgba(61, 57, 56, 0.801);
+}
+#border::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-280deg);
+    width: 160%;
+    background-image: conic-gradient(#ff00bb 0deg,#ff00bb 90deg,transparent 130deg,transparent 180deg,#4530ff 180deg,#4530ff 270deg,transparent 310deg,transparent 360deg);
+    transition: transform 2s;
+}
+
+#border:hover::before{
+    transform: translate(-50%,-50%) rotate(-100deg);
+}
+#skills{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #08d665;
+}
+.images-linking{
+    text-decoration: none;
+     color: black;
+}
+.images-linking:hover{
+    color: #000;
+}
+#Experience{
+    color: #08d665;
+}
+.form-label{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer-link{
+    color: rgb(30, 48, 80);
+    padding: 80px;
+    text-decoration: none;
+    font-weight: 400;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+}
+
+.copyrights{
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
